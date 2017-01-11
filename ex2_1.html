@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script type="text/javascript">
+      var etat=0;
+      function mafonction() {
+        if (etat==0) {
+          document.getElementById("amp").src="http://www.iut-fbleau.fr/sitebp/web/wim11/js/on.png";
+        etat=1;
+      }
+        else if (etat==1) {
+          document.getElementById("amp").src="http://www.iut-fbleau.fr/sitebp/web/wim11/js/off.png";
+        etat=0;
+      } 
+      }
+    </script>
+  </head>
+  <body>
+    <img id = "amp" onClick="mafonction(this.src);" src="http://www.iut-fbleau.fr/sitebp/web/wim11/js/off.png" />
+  </body>
+</html>
