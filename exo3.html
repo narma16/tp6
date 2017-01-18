@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+ <html lang="fr">
+  <head>
+   <meta charset="UTF-8"/>
+    <script language="javascript">
+ new Date(day, month, year);
+      function Datum() {
+        var v = Date.parse("10 13, 1998");
+        var d = Date.parse("01 11, 2017");
+        var minutes = 1000 * 60;
+        var hours = minutes * 60;
+        var days = hours * 24;
+        var years = days * 365;
+        var y = Math.round(v/years);
+        var z = Math.round(d/years)-y;
+        document.getElementById("bip").innerHTML = z;  
+      }
+       
+    </script>
+   </head>
+<body>
+    
+  <form>
+    <label for="date">Date de naissance :</label> <input type="date" name="date" id="date" required />
+  </form>
+  <button onclick="Datum()"> Votre age
+  </button>
+  <p id="bip">
+  </p>
+  
+   </body>
+   
