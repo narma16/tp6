@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+ <html lang="fr">
+  <head>
+   <meta charset="UTF-8"/>
+    <style>
+      img{
+        display:block;
+        margin:auto;
+      }
+    </style>
+    <script language="javascript">
+      var etat = 1;
+      var inter = setInterval(allumer,500);
+function allumer() {
+  if(etat == 1){
+      document.getElementById('ziz').src='http://www.iut-fbleau.fr/sitebp/web/wim11/js/on.png';
+  etat = 0;
+  }
+  else if (etat == 0){
+   document.getElementById('ziz').src='http://www.iut-fbleau.fr/sitebp/web/wim11/js/off.png';
+    etat = 1;
+  }
+  }
+    </script>
+  </head>
+   <body>
+    
+     <img id ="ziz" src="http://www.iut-fbleau.fr/sitebp/web/wim11/js/off.png" onclick="allumer()" />
+   </body>
+</html>
